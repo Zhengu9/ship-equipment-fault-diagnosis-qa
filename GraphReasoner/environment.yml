@@ -1,0 +1,23 @@
+name: gnn-rag
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pytorch=1.7.1
+  - cudatoolkit=11.0
+  - numpy=1.19.5
+  - networkx=3.1
+  - pybind11=2.11.1
+  - pip:
+    - Base==1.0.4
+    - tqdm==4.59.0
+    - transformers==4.32.0
+    - openai==0.27.9
+    - trl==0.7.1
+    - peft==0.5.0
+    - datasets==2.14.4
+    - accelerate==0.22.0
+    - graph-walker==1.0.6

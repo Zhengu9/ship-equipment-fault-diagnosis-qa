@@ -1,0 +1,31 @@
+{
+    "raw_data_dir": "data/raw/ShipQA",
+    "processed_data_dir": "data/ShipQA",
+    "hop": 2, 
+    "embedding_model": {
+    "model_path": "BAAI/bge-m3",
+    "device": "cpu"
+    },
+    "vector_store_names": {
+        "node": "ship_node",
+        "relation": "ship_relation",
+        "type": "ship_type"
+    },
+    "retriever": {
+        "node_sim_topk": 16,
+        "relation_sim_topk": 16,
+        "final_topk": 5,
+        "timeout": 600
+    },
+    "llm": {
+        "model": "qwen:7b",
+        "base_url": "http://localhost:11434/v1",
+        "api_key": "ollama",
+        "temperature": 0.2,
+        "top_p": 0.1,
+        "max_tokens": 1024
+    },
+    "rewrite_shot": 8,
+    "answer_shot": 8,
+    "output_filename": "results/ship_query_results.txt"
+}

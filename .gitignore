@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.swp
+*.swo
+
+# IDE and local deployment settings
+.idea/
+.vscode/
+
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Generated RAG indexes, parsed documents, databases, and caches
+**/rag_storage/
+**/rag_storage_*/
+**/output/
+**/volumes/
+**/checkpoint/
+**/results/
+**/node_embeddings/
+**/models/
+**/data/
+**/data/raw/
+**/data/ShipQA/
+*.ckpt
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.sqlite
+*.db
+*.sst
+*.wal
+
+# Local run state and user exports
+.lightrag_initialized
+**/.init_done
+QAhistory.jsonl
+*.xlsx
+*.log
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
